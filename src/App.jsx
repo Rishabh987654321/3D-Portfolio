@@ -7,10 +7,14 @@ import FeatureCards from './sections/FeatureCards'
 import ExperienceSection from './sections/ExperienceSection'
 import TechStack from './sections/TechStack'
 import Testimonials from './sections/Testimonials'
-
+import Contact from './sections/Contact'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Footer from './sections/Footer'
 const App = () => {
   return (
     <>
+    <ToastContainer position="top-right" autoClose={3000} />
       <Navbar/>
       <Hero/>
       <ShowcaseSection/>
@@ -19,6 +23,8 @@ const App = () => {
       <ExperienceSection/>
       <TechStack/>
       <Testimonials/>
+      <Contact/>
+      <Footer/>
     </>
   )
 }
